@@ -1,41 +1,65 @@
-![Budget-Control-App](https://res.cloudinary.com/dwc3fiaro/image/upload/v1683909694/Budget-Control-App/1_ylla0v.png)
+<h2 align="center"> Budget-Control-Application </h2>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,q_100,w_657/v1683910489/Budget-Control-App/2_ewawda.png" />
+</p>
+
+# Table of Contents
+
+1. [First Step](#first-step)<br>
+2. [Second Step](#second-step)<br>
+3. [System Overview](#system-overview)</br>
+    * [Database](#database)
+    * [Backend](#backend)
+    * [Frontend](#frontend)        
+4. [Key Design Decision](#key-design-decisions)</br>
+    * [Database Design](#database-design)
+    * [Backend Design](#backend-design)
+    * [Frontend Design](#frontend-design)
+5. [CRUD Functionality :](#crud-functionality)
+    * [CREATE](#create-br)
+    * [READ](#read)
+    * [UPDATE](#update)  
+    * [DELETE](#delete)  
+6. [Security and Scalability](#securityy-and-scalability)
+7. [Conlusion and Reflection](#conclusion-and-reflection)
+
 ## First Step 
 
 To run the project, we have to download a zip file from the GitHub repository which contain all of the web application files
-![GitHubStep1](https://res.cloudinary.com/dwc3fiaro/image/upload/v1653314819/Report/GitHub_Step1_rxby41.jpg)
+![GitHubStep1](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,q_100,w_805/v1683911199/Budget-Control-App/3_sfdym2.png)
 
 After we downloaded the project we need to unpack to any location on our disk drive. We need to install ["NodeJS"](https://nodejs.org/en/download/) on our computer
 and choose a correct version.
 
 ## Second Step
 
-In the Visual Studio Code we need to open the project containing all of the files. After loading successfully to Visual Studio we should install all dependencies for frontend and backend that are located in package.json files .
+In the Visual Studio Code we need to open the project containing all of the files. After loading successfully to Visual Studio we should install all dependencies that are located in package.json files .
 
-In root /backend and /frontend we need to run in terminal :
+In root of our project we need to run in terminal :
 ```javascript
 npm install
-cd frontend
-npm install
 ```
-![Step2](https://res.cloudinary.com/dwc3fiaro/image/upload/v1653315415/Report/Step2_jwjotd.jpg)
+![Step2](https://res.cloudinary.com/dwc3fiaro/image/upload/v1683911373/Budget-Control-App/4_kosnev.png)
 
 ## Third Step
 
 ### .ENV variables
 
-Next step is to create .env file including the code below
-.env is located in the root folder and includes DATABASE_URI for mongo database online. where username and login is admin.
+Next step is to create .env.dev file.
+.env.dev file has to be located in the root folder. It's including our firebase configuration variables.
 
 
 ```javascript
-NODE_ENV = development
-DATABASE_URI= mongodb+srv://admin:admin@cluster0.8tm77.mongodb.net/E-BookShop?retryWrites=true&w=majority
-PORT = 5000
-JWT_SECRET = abc123
-PAYPAL_CLIENT_ID =AS39RJrcSs2n7YPi2I7lKorhqhm8q7n1B-pkvc4jepbYwzGy16j6DOVv8JoNNMiSoWjA1q35QdHb7e5-
+REACT_APP_API_KEY=[our details]
+REACT_APP_AUTH_DOMAIN=[our details]
+REACT_APP_PROJECT_ID=[our details]
+REACT_APP_STORAGE_BUCKET=[our details]
+REACT_APP_MESSAGING_SENDER_ID=[our details]
+REACT_APP_APP_ID=[our details]
 ```
 
-![.envFile](https://res.cloudinary.com/dwc3fiaro/image/upload/v1653315669/Report/.ENV_file_tcw59l.jpg)
+![.envFile](https://res.cloudinary.com/dwc3fiaro/image/upload/v1683911748/Budget-Control-App/5_raex8j.png)
 
 # Connecting with Cluster in MongoDb Compass
 
