@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Global variables */
+  --font-family: 'Source Code Pro', monospace;
+  
+  /* Body Vaiables */
+  --body-vertical-padding: 8px;
+  --body-horizontal-padding: 8px;
+  --body-padding: var(--body-vertical-padding) var(--body-horizontal-padding);
+
+  /* App variables */
+  --app-primary-color: #fff;
+  --app-secondary-color: #1B434D;
+  --app-tertiary-color: #D3C2F8;
+  --app-fourth-color: #C3F44D;
+  --app-fifth-color: #60D385;
+
+  --app-primary-gradient-background: linear-gradient(319deg, #ffbd77 0%, #f0f4a4 37%, #acfcd9 100%);
+  --app-secondary-gradient-background: linear-gradient(319deg, #c2eaba 0%, #c5f4e0 37%, #efc2cf 100%);
+  --app-tertiary-gradient-background: linear-gradient(315deg, #d2d8d6 0%, #dce8e0 74%);
+
+  --app-max-width: 1024px;
+  --app-vertical-padding: 12px;
+  --app-horizontal-padding: 12px;
+  --app-padding: var(--app-vertical-padding) var(--app-horizontal-padding);
+  --app-border-radius: 16px;
+  --app-border-size: 1px;
+
+  /* App content variables */
+  --app-content-horizontal-padding: 10px;
+
+  /* Navbar variables */
+  --navbar-height: 70px;
+  --navbar-bottom-margin: 10px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    /* App variables */
+    --app-vertical-padding: 16px;
+    --app-horizontal-padding: 16px;
+
+    /* App content variables */
+    --app-content-horizontal-padding: 16px;
+  }
+}
+
+@media (min-width: 1050px) {
+  :root {
+    /* Body Vaiables */
+    --body-horizontal-padding: 0;
+  }
+}

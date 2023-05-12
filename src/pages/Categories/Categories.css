@@ -1,0 +1,10 @@
+.categories-page {
+    padding: 10px var(--app-content-horizontal-padding);
+    max-width: 768px;
+    margin: auto;
+}
+
+.categories-page .categories-page-header button {
+    color: var(--app-secondary-color);
+    background-color: var(--app-primary-color);
+}

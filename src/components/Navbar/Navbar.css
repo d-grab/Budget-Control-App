@@ -1,0 +1,76 @@
+.navbar {
+    height: var(--navbar-height);
+    padding: 0 var(--app-content-horizontal-padding);
+    background-color: var(--app-secondary-color);
+    color: var(--app-primary-color);
+    margin-bottom: var(--navbar-bottom-margin);
+    border-radius: var(--app-border-radius);
+}
+
+.navbar a {
+    color: var(--app-primary-color);
+    text-decoration: none;
+    padding: 0;
+}
+
+.menu-nav a {
+    border-bottom: 1px solid transparent ;
+}
+
+.menu-nav a:hover{
+    color: var(--app-primary-color);
+    border-color: lightgrey ;
+}
+/* .menu-nav a:first-child {
+    border: none;
+} */
+
+.menu {
+    display: flex;
+    font-weight: bold;
+    background-color: var(--app-secondary-color);
+    color: var(--app-primary-color);
+    border: var(--app-border-size) solid var(--app-primary-color);
+}
+
+.menu:hover,
+.menu:active,
+.menu:focus {
+    background-color: var(--app-secondary-color);
+    color: var(--app-primary-color);
+}
+
+.menu-modal .modal-dialog {
+    max-width: 65%;
+    margin: auto;
+}
+
+.menu-modal .modal-header {
+    background-color: var(--app-secondary-color);
+    color: var(--app-primary-color);
+}
+
+.modal-header .btn-close {
+    border: var(--app-border-size) solid var(--app-primary-color);
+    opacity: 1;
+}
+
+.menu-modal .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-modal .modal-body a {
+    border: var(--app-border-size) solid var(--app-secondary-color);
+    background: var(--app-primary-gradient-background);
+    border-radius: 6px;
+    padding: 8px 32px;
+    margin: 4px 0;
+    font-weight: bold;
+    color: var(--app-secondary-color);
+}
+
+.menu-modal .modal-body a:hover {
+    background: var(--app-secondary-gradient-background);
+}

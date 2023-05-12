@@ -1,0 +1,85 @@
+/* Plans Styling */
+
+.plans-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px var(--app-content-horizontal-padding);
+    max-width: 768px;
+    margin: auto;
+}
+
+.plans-header .plans-header-title {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: var(--app-secondary-color);
+}
+
+.plans-header .plans-view-all-btn {
+    text-decoration: none;
+    border: none;
+    padding: 3px 6px;
+    border-radius: 6px;
+    color: var(--app-secondary-color);
+    background-color: var(--app-primary-color);
+    font-size: 14px;
+    letter-spacing: 0.01px;
+}
+
+.plans-header .plans-view-all-btn:active {
+    transform: scale(.98);
+}
+
+.plans {
+    max-width: 768px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.plans::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.plans {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.plan {
+    background-color: var(--app-primary-color);
+    /* border: 1px solid var(--app-secondary-color); */
+    border-radius: var(--app-border-radius);
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.home .plans .plan {
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.plan .plan-title {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 400px) {
+
+    .home .plans .plan {
+        min-width: 300px;
+        max-width: 300px;
+    }
+/*     
+    .plan {
+        max-width: 300px;
+        min-width: 300px;
+    } */
+}
+
+@media (min-width: 768px) {
+    /*  */
+} 

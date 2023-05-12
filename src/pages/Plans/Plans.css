@@ -1,0 +1,39 @@
+.plans-page {
+    padding: 10px var(--app-content-horizontal-padding);
+    max-width: 768px;
+    margin: auto;
+}
+
+.plans-page button {
+    color: var(--app-secondary-color);
+    background-color: var(--app-primary-color);
+}
+
+.plans-page button:active {
+    transform: scale(.98);
+}
+
+.plans-page .plans {
+    flex-wrap: wrap;
+}
+
+.plans-page .plans .plan {
+    min-width: 250px;
+    flex: 1;
+}
+
+@media (min-width: 400px) {
+
+    .plans-page .plan {
+        min-width: 300px;
+    }
+/*     
+    .plan {
+        max-width: 300px;
+        min-width: 300px;
+    } */
+}
+
+@media (min-width: 768px) {
+    /*  */
+} 

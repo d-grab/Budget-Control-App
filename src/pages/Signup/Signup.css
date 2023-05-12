@@ -1,0 +1,70 @@
+.signup-container {
+  display: flex;
+  min-height: calc(100vh - 2*var(--body-vertical-padding) - 2*var(--app-vertical-padding) - var(--navbar-height) - var(--navbar-bottom-margin) - 2*var(--app-border-size));
+}
+
+.signup-form {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  padding: 28px 32px;
+  /* border: var(--app-border-size) solid var(--app-secondary-color); */
+  background: var(--app-secondary-gradient-background);
+  color: var(--app-secondary-color);
+  border-radius: var(--app-border-radius);
+}
+
+.signup-form input {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: var(--app-border-size) solid var(--app-secondary-color);
+  color: var(--app-secondary-color);
+} 
+
+/* App login button */
+.signup-button {
+  border: var(--app-border-size) solid var(--app-secondary-color);
+  background: var(--app-primary-gradient-background);
+  color: var(--app-secondary-color);
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 8px 10px;
+}
+
+.signup-button:hover {
+  background-color: var(--app-primary-color);
+  color: var(--app-secondary-color);
+}
+
+/* App reset button */
+.reset-button {
+  padding: 8px 10px;
+  background-color: var(--app-secondary-color);
+  color: var(--app-primary-color);
+  border-radius: 6px;
+  font-weight: bold;
+  border: var(--app-border-size) solid var(--app-secondary-color);
+}
+
+.reset-button:hover {
+  background-color: var(--app-secondary-color);
+  color: var(--app-primary-color);
+}
+
+.signup-button:active,
+.reset-button:active {
+  transform: scale(.98);
+}
+
+.login-btn {
+  background: var(--app-primary-gradient-background);
+  color: var(--app-secondary-color);
+  border: var(--app-border-size) solid var(--app-secondary-color);
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+
+.login-btn:hover {
+  color: var(--app-secondary-color);
+}

@@ -1,0 +1,121 @@
+/* Home Styling */
+
+.hero-container {
+  padding: var(--app-content-horizontal-padding);
+  background-color: var(--app-fourth-color);
+  border-radius: var(--app-border-radius);
+  /* border: var(--app-border-size) solid var(--app-secondary-color); */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container .hero-container-left {
+  text-align: center;
+  padding: 16px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 30px;
+}
+
+.hero-container .hero-container-left .budget-btn {
+  padding: 10px 12px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--app-secondary-color);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.hero-container .hero-container-left .budget-btn:focus {
+  outline: none;
+}
+
+.hero-container .hero-container-left .budget-btn:active {
+  transform: scale(.98);
+}
+
+.hero-container-left,
+.hero-container-right {
+  flex: 1;
+  width: 100%;
+}
+
+.hero-container-left {
+  text-align: center;
+}
+
+.hero-container-right .reset-all-btn {
+  cursor: pointer;
+}
+
+.hero-container-right .reset-all-btn:active {
+  transform: scale(0.98);
+}
+
+.hero-container-right .budget-statistics {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.statistics-container {
+  background-color: var(--app-primary-color);
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.statistics-btn {
+  background-color: var(--app-secondary-color);
+  color: var(--app-primary-color);
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.arrow-link {
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.arrow-link.active {
+  transform: scale(.98);
+}
+
+@media (min-width: 360px) {
+  .hero-container-right .budget-statistics {
+    flex-direction: row;
+  }
+
+  .statistics-container {
+    padding: 8px;
+  }
+}
+
+@media (min-width: 480px) {
+  .statistics-container {
+    padding: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    padding: 40px var(--app-content-horizontal-padding);
+    flex-direction: row;
+  }
+
+  .hero-container .hero-container-left {
+    border: none;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 16px;
+  }
+
+  .hero-container .hero-container-right {
+    padding: 0 16px;
+  }
+}

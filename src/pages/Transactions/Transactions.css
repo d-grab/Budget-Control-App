@@ -1,0 +1,18 @@
+.transaction-page {
+    padding: 10px var(--app-content-horizontal-padding);
+    max-width: 768px;
+    margin: auto;
+}
+
+.transaction-page button {
+    color: var(--app-secondary-color);
+    background-color: var(--app-primary-color);
+}
+
+.transaction-page button:active {
+    transform: scale(.98);
+}
+
+/* .plans-page .plans-page-header {
+    padding: 10px var(--app-content-horizontal-padding);
+} */

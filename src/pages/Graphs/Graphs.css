@@ -1,0 +1,11 @@
+.graphs-page {
+    color: var(--app-secondary-color);
+    max-width: 768px;
+    margin: auto;
+}
+
+.graphs-page .graph {
+    padding: 20px var(--app-content-horizontal-padding);
+    background-color: var(--app-primary-color);
+    border-radius: var(--app-border-radius);
+}

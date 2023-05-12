@@ -1,0 +1,20 @@
+body {
+    font-family: var(--font-family);
+    padding: var(--body-padding);
+    background: linear-gradient(316deg, #dddcde 0%, #f5f3f8 74%);
+}
+
+.app {
+    max-width: var(--app-max-width);
+    margin: auto;
+    min-height: calc(100vh - 2*var(--body-vertical-padding));
+    padding: var(--app-padding);
+    background-image: var(--app-primary-gradient-background);
+    color: var(--app-secondary-color);
+    border-radius: var(--app-border-radius);
+    /* border: var(--app-border-size) solid var(--app-secondary-color); */
+}
+
+.test {
+    outline: 2px solid red;
+}

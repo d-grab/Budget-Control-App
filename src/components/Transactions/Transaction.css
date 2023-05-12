@@ -1,0 +1,82 @@
+/* Transactions Styling */
+
+.transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px var(--app-content-horizontal-padding);
+    max-width: 768px;
+    margin: auto;
+}
+
+.transactions-header .transactions-title {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: var(--app-secondary-color);
+}
+
+.transactions-header .transactions-view-all-btn {
+    /* border: var(--app-border-size) solid var(--app-secondary-color); */
+    /* border: none;
+    padding: 3px 6px;
+    border-radius: 6px;
+    color: var(--app-secondary-color);
+    background: var(--app-secondary-gradient-background);
+    font-size: 14px;
+    letter-spacing: 0.01px; */
+
+    text-decoration: none;
+    border: none;
+    padding: 3px 6px;
+    border-radius: 6px;
+    color: var(--app-secondary-color);
+    background-color: var(--app-primary-color);
+    font-size: 14px;
+    letter-spacing: 0.01px;
+}
+
+.transactions {
+    max-width: 768px;
+    margin: auto;
+    padding: 16px;
+    background-color: var(--app-primary-color);
+    color: var(--app-secondary-color);
+    border-radius: var(--app-border-radius);
+    /* border: var(--app-border-size) solid var(--app-secondary-color); */
+}
+
+.trans {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.trans-icons {
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.trans-plan {
+    font-size: 12px;
+}
+
+.trans-date {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: var(--app-secondary-color);
+    opacity: .7;
+}
+
+.trans-description {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 480px) {
+    .transactions {
+        padding: 16px 32px;
+    }
+}
