@@ -1,3 +1,140 @@
+![Budget-Control-App(https://res.cloudinary.com/dwc3fiaro/image/upload/v1683909694/Budget-Control-App/1_ylla0v.png)
+## First Step 
+
+To run the project, we have to download a zip file from the GitHub repository which contain all of the web application files
+![GitHubStep1](https://res.cloudinary.com/dwc3fiaro/image/upload/v1653314819/Report/GitHub_Step1_rxby41.jpg)
+
+After we downloaded the project we need to unpack to any location on our disk drive. We need to install ["NodeJS"](https://nodejs.org/en/download/) on our computer
+and choose a correct version.
+
+## Second Step
+
+In the Visual Studio Code we need to open the project containing all of the files. After loading successfully to Visual Studio we should install all dependencies for frontend and backend that are located in package.json files .
+
+In root /backend and /frontend we need to run in terminal :
+```javascript
+npm install
+cd frontend
+npm install
+```
+![Step2](https://res.cloudinary.com/dwc3fiaro/image/upload/v1653315415/Report/Step2_jwjotd.jpg)
+
+## Third Step
+
+### .ENV variables
+
+Next step is to create .env file including the code below
+.env is located in the root folder and includes DATABASE_URI for mongo database online. where username and login is admin.
+
+
+```javascript
+NODE_ENV = development
+DATABASE_URI= mongodb+srv://admin:admin@cluster0.8tm77.mongodb.net/E-BookShop?retryWrites=true&w=majority
+PORT = 5000
+JWT_SECRET = abc123
+PAYPAL_CLIENT_ID =AS39RJrcSs2n7YPi2I7lKorhqhm8q7n1B-pkvc4jepbYwzGy16j6DOVv8JoNNMiSoWjA1q35QdHb7e5-
+```
+
+![.envFile](https://res.cloudinary.com/dwc3fiaro/image/upload/v1653315669/Report/.ENV_file_tcw59l.jpg)
+
+# Connecting with Cluster in MongoDb Compass
+
+To establish a new connection with dabase and see all of the data and collection we have to use a link to the Collection from .env file 
+
+``` mongodb+srv://admin:admin@cluster0.8tm77.mongodb.net/E-BookShop?retryWrites=true&w=majority ```
+
+***where :***  <br>
+
+username - admin <br>
+password - admin
+
+![ConnectedCompass](https://res.cloudinary.com/dwc3fiaro/image/upload/v1654528552/Report/MONGO_COMPASS_CONNECTION_idffew.jpg)
+
+## After successfull connection we should be able to see this window 
+
+![AfterConnection](https://res.cloudinary.com/dwc3fiaro/image/upload/v1654528640/Report/MONGO_AFTER_CONNECTED_afotg4.jpg)
+
+
+
+
+
+# Running project in development mode
+
+To run frontend : (running on port : 3000)
+```
+npm run client
+```
+
+To run backend : (running on port: 5000)
+```
+npm run server
+```
+To run backend and fronend 
+```
+npm run dev
+```
+To run backend and frontend in the same time I created script in package.json 
+```javascript
+"dev": "concurrently \"npm run server\" \"npm run client\"",
+```
+
+# Running project in production mode
+
+In .env file we need to change from 
+```javascript
+NODE_ENV = development
+```
+to :
+```javascript
+NODE_ENV = production
+```
+
+![ProductionMmode](https://res.cloudinary.com/dwc3fiaro/image/upload/v1654529275/Report/productionMODE_fvz6i2.jpg)
+
+We need to create build for production typing in ```/frontend```
+```
+npm run build
+```       
+![BuildProduction](https://res.cloudinary.com/dwc3fiaro/image/upload/v1654529566/Report/NPM_BUILD_xfwxqj.jpg)
+
+After successfully running ```npm run build``` , in the root folder we can type in command  ```npm start``` <br>
+
+
+Our application will run on  ``` port 5000```
+
+![npmSTART](https://res.cloudinary.com/dwc3fiaro/image/upload/v1654529752/Report/NPM_START_vaebt4.jpg)
+
+![RunningProduction](https://res.cloudinary.com/dwc3fiaro/image/upload/v1654529830/Report/RUNNING_PRODUCTION_hu1rcd.jpg)
+
+
+
+
+
+
+## Backend modules
+I use ECMAScript Modules for backed to covert common JS to import JS. for example in server.js instead of using 
+```javascript
+const express = require('express)
+``` 
+We can use 
+```javascript
+import express from 'express'
+```
+
+The only thing we have to remember is to add .js when we importing files, not packages .
+In order to use that module I added in root folder package.json,  line
+
+```javascript
+"type": "module"
+```
+
+[ECMA Moodule](https://nodejs.org/api/esm.html), [Package Instructions](https://nodejs.org/api/packages.html)
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
