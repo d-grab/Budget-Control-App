@@ -12,6 +12,8 @@
     * [Second Step](#second-step)<br>
     * [Third Step](#third-step)
 3. [Firebase Setup](#firebase-setup)
+4. [Production Mode](#production-mode)
+5. [Development Mode](#development-mode)
 7. [Security and Scalability](#securityy-and-scalability)
 8. [Conlusion and Reflection](#conclusion-and-reflection)
 
@@ -70,6 +72,18 @@ REACT_APP_APP_ID=[our details]
 
 # Firebase Setup
 
-After successfully created account in Firebase platform we need to create [Firebase](https://console.firebase.google.com) project.
-![New Firebase Project](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_317,q_100/v1683916502/Budget-Control-App/6_ns47ac.png)
+After successfully created account in Firebase platform we need to create [Firebase](https://console.firebase.google.com) project and follow simple
+3 steps process.
+
+![New Firebase Project](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_317,q_100/v1683916502/Budget-Control-App/6_ns47ac.png)<br>
+
+- Next step is to register a Web application on Firebase. The Firebase configuration will be used in .env.dev file in our project.
+
+![New Firebase Project](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_345,q_100/v1683921013/Budget-Control-App/13_wshcay.png)
+
+- Secondly We need to create a databse in our web application and enable email/password Authentication to register new users.
+
+![New Database ](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_291,q_100/v1683921230/Budget-Control-App/14_sx5tve.png)<br>
+![Email/Password Authentication](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_388,q_100/v1684154661/Budget-Control-App/16_xgi1dh.png)
+
 
