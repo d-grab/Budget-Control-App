@@ -13,9 +13,10 @@
     * [Second Step](#second-step)<br>
     * [Third Step](#third-step)
 4. [Firebase Setup](#firebase-setup)
-5. [Development Mode (Localhost)](#development-mode)
+5. [Development Mode (Localhost)](#development-mode-localhost)
 6. [Production Mode (Deployment)](#production-mode-deployment)
     * [Firebase Hosting](#firebase-hosting)
+    * [Production Build](#production-build)
 8. [Security and Scalability](#securityy-and-scalability)
 9. [Conlusion and Reflection](#conclusion-and-reflection)
 
@@ -137,7 +138,7 @@ Follow initialization of Hosting for an application
 ![Firebase Hosting](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_224,q_100/v1684166769/Budget-Control-App/24_q9hs8r.png)
 
 
-
+## Production build
 In order to deploy an application on Firebase server, it is required to create a build for production. That can be achieved by running created script in which it is mandatory to change the project ID of the application into the one created on Firebase platform: 
 
 ```
