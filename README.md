@@ -13,8 +13,8 @@
     * [Second Step](#second-step)<br>
     * [Third Step](#third-step)
 4. [Firebase Setup](#firebase-setup)
-5. [Development Mode](#development-mode)
-6. [Production Mode](#production-mode)
+5. [Development Mode (Localhost)](#development-mode)
+6. [Production Mode (Deployment)](#production-mode-deployment)
     * [Firebase Hosting](#firebase-hosting)
 8. [Security and Scalability](#securityy-and-scalability)
 9. [Conlusion and Reflection](#conclusion-and-reflection)
