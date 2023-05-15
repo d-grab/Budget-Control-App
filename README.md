@@ -17,8 +17,8 @@
 6. [Production Mode (Deployment)](#production-mode-deployment)
     * [Firebase Hosting](#firebase-hosting)
     * [Production Build](#production-build)
-8. [Security and Scalability](#securityy-and-scalability)
-9. [Conlusion and Reflection](#conclusion-and-reflection)
+8. [Used Technologies](#used-technologies)
+
 
 # Project Description
 
@@ -157,5 +157,20 @@ Another way of deploying an application is to used a build in script ``` npm run
 After deployment the application can be access under 2 domains :<br>
 [Web app address - budget-control-85f93.web.app](https://budget-control-85f93.web.app)<br>
 [Firebase App address - budget-control-85f93.firebaseapp.com](https://budget-control-85f93.firebaseapp.com)
+
+# Used Technologies
+
+The following technologies have been used in the building process of the application:
+
+- React   (v17.0.2 )
+- Firebase  (v9.18.0)
+- Node JS  (v16.14.2)
+- HTML
+- CSS
+- Bootstrap 
+- React-Tostify 
+- Chart.js
+
+React Tostify has been used to create and style pop-up messages and notification for the application. Chart.JS library has been used to create graphs and display transactions  and expenditures over time.
 
 
