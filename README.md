@@ -15,8 +15,9 @@
 4. [Firebase Setup](#firebase-setup)
 5. [Development Mode](#development-mode)
 6. [Production Mode](#production-mode)
-7. [Security and Scalability](#securityy-and-scalability)
-8. [Conlusion and Reflection](#conclusion-and-reflection)
+    * [Firebase Hosting](#firebase-hosting)
+8. [Security and Scalability](#securityy-and-scalability)
+9. [Conlusion and Reflection](#conclusion-and-reflection)
 
 # Project Description
 
@@ -119,8 +120,35 @@ npm run start
 ```
 ![Development mode](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_264,q_100/v1684159680/Budget-Control-App/17_mngaja.png)
 
-After creating first account and loggin into the application , the firebase will required to install indexes for collections. In the browser we need to right click and inspect the page in order to access the link and install indexes directly from Cloud Firestore.
+After creating the first account and logging into the application, firebase will ask for permission to install collection indexes. Right-clicking and inspecting the page in the browser is required to access the link and install all indexes for three collections directly from Cloud Firestore.
 
 ![Cloud Indexes](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_385,q_100/v1684163620/Budget-Control-App/18_ssynqc.png)
+![Cloud Indexes](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_470,q_100/v1684165292/Budget-Control-App/22_mcyjus.png)
+
+# Production mode (Deployment)
+## Firebase Hosting
+
+For deployment of an application on Firebase platform, user is required to add hosting for the application
+
+![Firebase Hosting](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_224,q_100/v1684166769/Budget-Control-App/24_q9hs8r.png)
+
+Follow initialization of Hosting for an application
+
+![Firebase Hosting](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_224,q_100/v1684166769/Budget-Control-App/24_q9hs8r.png)
+
+
+
+In order to deploy an application on Firebase server, it is required to create a build for production. That can be achieved by running created script in which it is mandatory to change the project ID of the application into the one created on Firebase platform: 
+
+```
+"build:deploy": "env-cmd -f .env.dev npm run build && firebase deploy -P [Project Id]"  },
+```
+In the terminal use the command :
+```
+npm run build:deploy
+```
+![Cloud Indexes](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_147,q_100/v1684166096/Budget-Control-App/23_hw9c4t.png)
+
+Another way of deploying an application is to used a build in script ``` npm run build ``` which will create a build file and while using the firebase-tools, perform deployment from the console level using ```firebase init``` and ```firebase deploy```<br>
 
 
