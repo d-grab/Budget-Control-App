@@ -7,13 +7,14 @@
 # Table of Contents
 
 1.  [Project description](#project-description)
-2.  [Project Setup](#project-setup)
+2.  [Live Link](#live-link)
+3.  [Project Setup](#project-setup)
     * [First Step](#first-step)<br>
     * [Second Step](#second-step)<br>
     * [Third Step](#third-step)
-3. [Firebase Setup](#firebase-setup)
-4. [Production Mode](#production-mode)
+4. [Firebase Setup](#firebase-setup)
 5. [Development Mode](#development-mode)
+6. [Production Mode](#production-mode)
 7. [Security and Scalability](#securityy-and-scalability)
 8. [Conlusion and Reflection](#conclusion-and-reflection)
 
@@ -27,7 +28,9 @@ The users are able to :
 - Create plans and goals (e.g. "London Tour", "New Car purchase")
 - Present the financial transactions in the form of graphs, and determine which of the categories they spend the most money on.
 
-Deployed application : 
+# Live Link
+
+Deployed application :<br> 
 https://budget-control-85f93.web.app <br>
 https://budget-control-85f93.firebaseapp.com
 
@@ -84,6 +87,30 @@ After successfully created account in Firebase platform we need to create [Fireb
 - Secondly We need to create a databse in our web application and enable email/password Authentication to register new users.
 
 ![New Database ](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_291,q_100/v1683921230/Budget-Control-App/14_sx5tve.png)<br>
+
+The project can be create in production mode as everything has been tested. We need to change the rules of our databse that will Allow read/write access on all documents to any user signed in to the application
+
+```javascript
+// Allow read/write access on all documents to any user signed in to the application
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if request.auth != null; }}}
+```
+
+![New Database ](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,q_100,w_933/v1683921433/Budget-Control-App/15_pqjq4f.png)<br>
+
 ![Email/Password Authentication](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_388,q_100/v1684154661/Budget-Control-App/16_xgi1dh.png)
+
+# Development mode (Localhost)
+
+The React application is hosted on a development server that is located on the user's local machine. This server offers various functionalities, including hot-reloading, which enables the user to view modifications in real time without requiring a browser refresh.
+
+After downloading project and installing all dependecies, and creatig .env.dev file with Firebase configuration, the project can be started with build in script 
+
+```javascript
+npm run start
+```
+![Development mode](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_264,q_100/v1684159680/Budget-Control-App/17_mngaja.png)
 
 
