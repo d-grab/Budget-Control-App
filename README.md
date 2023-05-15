@@ -8,16 +8,17 @@
 
 1.  [Project description](#project-description)
 2.  [Live Link](#live-link)
-3.  [Project Setup](#project-setup)
+3.  [Used Technologies](#used-technologies)
+4.  [Project Setup](#project-setup)
     * [First Step](#first-step)<br>
     * [Second Step](#second-step)<br>
     * [Third Step](#third-step)
-4. [Firebase Setup](#firebase-setup)
-5. [Development Mode (Localhost)](#development-mode-localhost)
-6. [Production Mode (Deployment)](#production-mode-deployment)
+5. [Firebase Setup](#firebase-setup)
+6. [Development Mode (Localhost)](#development-mode-localhost)
+7. [Production Mode (Deployment)](#production-mode-deployment)
     * [Firebase Hosting](#firebase-hosting)
     * [Production Build](#production-build)
-8. [Used Technologies](#used-technologies)
+
 
 
 # Project Description
@@ -35,6 +36,22 @@ The users are able to :
 Deployed application :<br> 
 https://budget-control-85f93.web.app <br>
 https://budget-control-85f93.firebaseapp.com
+
+# Used Technologies
+
+The following technologies have been used in the building process of the application:
+
+- React   (v17.0.2 )
+- Firebase  (v9.18.0)
+- Node JS  (v16.14.2)
+- HTML
+- CSS
+- Bootstrap 
+- React-Tostify 
+- Chart.js
+
+React Tostify has been used to create and style pop-up messages and notification for the application. Chart.JS library has been used to create graphs and display transactions  and expenditures over time.
+
 
 # Project Setup
 
@@ -158,19 +175,5 @@ After deployment the application can be access under 2 domains :<br>
 [Web app address - budget-control-85f93.web.app](https://budget-control-85f93.web.app)<br>
 [Firebase App address - budget-control-85f93.firebaseapp.com](https://budget-control-85f93.firebaseapp.com)
 
-# Used Technologies
-
-The following technologies have been used in the building process of the application:
-
-- React   (v17.0.2 )
-- Firebase  (v9.18.0)
-- Node JS  (v16.14.2)
-- HTML
-- CSS
-- Bootstrap 
-- React-Tostify 
-- Chart.js
-
-React Tostify has been used to create and style pop-up messages and notification for the application. Chart.JS library has been used to create graphs and display transactions  and expenditures over time.
 
 
