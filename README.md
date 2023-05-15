@@ -135,7 +135,9 @@ For deployment of an application on Firebase platform, user is required to add h
 
 Follow initialization of Hosting for an application
 
-![Firebase Hosting](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_224,q_100/v1684166769/Budget-Control-App/24_q9hs8r.png)
+![Firebase Hosting](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_255,q_100/v1684167664/Budget-Control-App/29_cvxqkc.png)<br>
+![Firebase Hosting](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_402,q_100/v1684167775/Budget-Control-App/28_fg55uh.png)
+
 
 
 ## Production build
@@ -151,5 +153,9 @@ npm run build:deploy
 ![Cloud Indexes](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_147,q_100/v1684166096/Budget-Control-App/23_hw9c4t.png)
 
 Another way of deploying an application is to used a build in script ``` npm run build ``` which will create a build file and while using the firebase-tools, perform deployment from the console level using ```firebase init``` and ```firebase deploy```<br>
+
+After deployment the application can be access under 2 domains :<br>
+[Web app address - budget-control-85f93.web.app](https://budget-control-85f93.web.app)<br>
+[Firebase App address - budget-control-85f93.firebaseapp.com](https://budget-control-85f93.firebaseapp.com)
 
 
