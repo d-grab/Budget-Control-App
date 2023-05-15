@@ -88,7 +88,15 @@ After successfully created account in Firebase platform we need to create [Fireb
 
 ![New Database ](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_291,q_100/v1683921230/Budget-Control-App/14_sx5tve.png)<br>
 
-The project can be create in production mode as everything has been tested. We need to change the rules of our databse that will Allow read/write access on all documents to any user signed in to the application
+- The project can be create in production mode as everything has been tested. We need to change the rules of our databse that will Allow read/write access on all documents to any user signed in to the application
+
+![New Database ](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,q_100,w_933/v1683921433/Budget-Control-App/15_pqjq4f.png)<br>
+
+- Enabling Email / Password Authentication
+
+![Email/Password Authentication](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_388,q_100/v1684154661/Budget-Control-App/16_xgi1dh.png)
+
+- Changing database rules
 
 ```javascript
 // Allow read/write access on all documents to any user signed in to the application
@@ -97,10 +105,8 @@ service cloud.firestore {
     match /{document=**} {
       allow read, write: if request.auth != null; }}}
 ```
+![Database Rules](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_322,q_100/v1684161138/Budget-Control-App/20_t7q5gc.png)
 
-![New Database ](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,q_100,w_933/v1683921433/Budget-Control-App/15_pqjq4f.png)<br>
-
-![Email/Password Authentication](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_388,q_100/v1684154661/Budget-Control-App/16_xgi1dh.png)
 
 # Development mode (Localhost)
 
