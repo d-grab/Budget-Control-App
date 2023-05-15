@@ -21,8 +21,8 @@ const Plan = ({
           )}
         </p>
         <div className="d-flex">
-          <h5>${currentAmount}</h5>
-          <h5 className="ms-auto text-secondary">${budgetAmount}</h5>
+          <h5>£{currentAmount}</h5>
+          <h5 className="ms-auto text-secondary">£{budgetAmount}</h5>
         </div>
         <ProgressBar
           className="rounded-pill mb-2 mb-sm-3"

@@ -86,7 +86,7 @@ const HeroRight = () => {
             <div className="d-flex justify-content-between align-items-center">
               <div>
                 <h6 className="mt-3 mb-2 opacity-75">Incomes</h6>
-                <h6 className="fw-bold">${incomeBalance}</h6>
+                <h6 className="fw-bold">£{incomeBalance}</h6>
               </div>
               <Link to="/graphs">
                 <ArrowOutward
@@ -110,7 +110,7 @@ const HeroRight = () => {
             <div className="d-flex justify-content-between align-items-center">
               <div>
                 <h6 className="mt-3 mb-2 opacity-75">Spendings</h6>
-                <h6 className="fw-bold">${outcomeBalance}</h6>
+                <h6 className="fw-bold">£{outcomeBalance}</h6>
               </div>
               <Link to="/graphs">
                 <ArrowOutward

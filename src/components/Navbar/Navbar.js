@@ -22,7 +22,7 @@ const Navbar = () => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            $ Budget App
+            £ Budget App
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="text-center">
@@ -39,7 +39,7 @@ const Navbar = () => {
       <Navbarr variant="dark" className="navbar shadow">
         <Container fluid>
           <Navbarr.Brand as={Link} to="/">
-            $ Budget App
+            £ Budget App
           </Navbarr.Brand>
 
           <Nav className="menu-nav ms-auto d-none d-md-flex">

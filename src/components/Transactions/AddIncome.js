@@ -33,7 +33,7 @@ const AddIncome = ({ show, handleClose }) => {
       return toast.error(response.error);
     }
 
-    toast.success(`Successfully deposit $${form.amount}.`);
+    toast.success(`Successfully deposit £${form.amount}.`);
 
     handleReset();
     handleClose();
@@ -67,7 +67,7 @@ const AddIncome = ({ show, handleClose }) => {
               type="number"
               required
               min={1}
-              max={10000}
+              max={100000}
               name="amount"
               value={form.amount}
               onChange={handleChange}

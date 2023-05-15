@@ -113,7 +113,7 @@ const UpdatePlan = ({
             <Form.Label>
               Budget Amount (Max-Limit:{" "}
               <span className="text-primary">
-                ${parseInt(parseInt(currentBalance) + parseInt(budgetAmount))}
+                £{parseInt(parseInt(currentBalance) + parseInt(budgetAmount))}
               </span>
               )
             </Form.Label>

@@ -13,7 +13,7 @@ const HeroLeft = () => {
     <div className="hero-container-left">
       <h5>My Balance</h5>
       <h2 className="mb-4">
-        $ <span className="fw-bold">{currentBalance}</span>
+        £ <span className="fw-bold">{currentBalance}</span>
       </h2>
       <div className="d-flex justify-content-center">
         <button

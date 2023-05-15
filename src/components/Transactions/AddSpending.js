@@ -100,13 +100,13 @@ const AddSpendingModal = ({ show, handleClose }) => {
               name="description"
               value={form.description}
               onChange={handleChange}
-              placeholder="Rent of house"
+              placeholder="House Rent"
             />
           </Form.Group>
           <Form.Group className="mb-3">
             <Form.Label>
               Spend Amount (Limit:{" "}
-              <span className="text-primary">${parseInt(getMaxLimit())}</span>)
+              <span className="text-primary">£{parseInt(getMaxLimit())}</span>)
             </Form.Label>
             <Form.Control
               type="number"

@@ -38,7 +38,7 @@ const AddPlan = ({ show, handleClose }) => {
     }
 
     if (currentBalance === 0) {
-      return toast.warning(`Your current balance is $ ${currentBalance}`);
+      return toast.warning(`Your current balance is £ ${currentBalance}`);
     }
 
     if (form.category === "") {
@@ -84,7 +84,7 @@ const AddPlan = ({ show, handleClose }) => {
           <Form.Group className="mb-3">
             <Form.Label>
               Budget Amount (Max-Limit:{" "}
-              <span className="text-primary">${currentBalance}</span>)
+              <span className="text-primary">£ {currentBalance}</span>)
             </Form.Label>
             <Form.Control
               type="number"

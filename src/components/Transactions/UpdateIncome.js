@@ -92,12 +92,12 @@ const UpdateIncome = ({
 
           <Form.Group className="mb-3">
             <Form.Label>Amount (Min-Limit:{" "}
-              <span className="text-primary">${parseInt(getMinLimit())}</span>)</Form.Label>
+              <span className="text-primary">£{parseInt(getMinLimit())}</span>)</Form.Label>
             <Form.Control
               type="number"
               required
               min={getMinLimit()}
-              max={10000}
+              max={100000}
               name="amount"
               value={form.amount}
               onChange={handleChange}

@@ -48,7 +48,7 @@ const Transaction = ({
               (category === "#income" ? "text-success" : "text-danger")
             }
           >
-            {(category === "#income" ? "" : "-") + `$${amount}`}
+            {(category === "#income" ? "" : "-") + `£${amount}`}
           </h6>
         </div>
 
