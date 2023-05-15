@@ -119,4 +119,8 @@ npm run start
 ```
 ![Development mode](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_264,q_100/v1684159680/Budget-Control-App/17_mngaja.png)
 
+After creating first account and loggin into the application , the firebase will required to install indexes for collections. In the browser we need to right click and inspect the page in order to access the link and install indexes directly from Cloud Firestore.
+
+![Cloud Indexes](https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_385,q_100/v1684163620/Budget-Control-App/18_ssynqc.png)
+
 
