@@ -27,6 +27,7 @@ The users are able to :
 
 Deployed application : 
 https://budget-control-85f93.web.app
+https://budget-control-85f93.firebaseapp.com
 
 # Project Setup
 
