@@ -6,23 +6,37 @@
 
 # Table of Contents
 
-1. [First Step](#first-step)<br>
-2. [Second Step](#second-step)<br>
-3. [System Overview](#system-overview)</br>
+1.  [Project description](#project-description)
+2.  [Project Setup](#project-setup)
+    * [First Step](#first-step)<br>
+    * [Second Step](#second-step)<br>
+4. [System Overview](#system-overview)</br>
     * [Database](#database)
     * [Backend](#backend)
     * [Frontend](#frontend)        
-4. [Key Design Decision](#key-design-decisions)</br>
+5. [Key Design Decision](#key-design-decisions)</br>
     * [Database Design](#database-design)
     * [Backend Design](#backend-design)
     * [Frontend Design](#frontend-design)
-5. [CRUD Functionality :](#crud-functionality)
+6. [CRUD Functionality :](#crud-functionality)
     * [CREATE](#create-br)
     * [READ](#read)
     * [UPDATE](#update)  
     * [DELETE](#delete)  
-6. [Security and Scalability](#securityy-and-scalability)
-7. [Conlusion and Reflection](#conclusion-and-reflection)
+7. [Security and Scalability](#securityy-and-scalability)
+8. [Conlusion and Reflection](#conclusion-and-reflection)
+
+# Project Description
+
+The application assists users in managing and controlling their expenditures. 
+Users can categorise their expenses and see where their money is going based on those classifications.
+The users are able to :
+- Add a incomes and spendings
+- Create categories for expenses (e.g. "Shopping", "Travel")
+- Create plans and goals (e.g. "London Tour", "New Car purchase")
+- Present the financial transactions in the form of graphs, and determine which of the categories they spend the most money on.
+
+# Project Setup
 
 ## First Step 
 
