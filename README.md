@@ -26,7 +26,7 @@ The users are able to :
 - Present the financial transactions in the form of graphs, and determine which of the categories they spend the most money on.
 
 Deployed application : 
-https://budget-control-85f93.web.app
+https://budget-control-85f93.web.app <br>
 https://budget-control-85f93.firebaseapp.com
 
 # Project Setup
