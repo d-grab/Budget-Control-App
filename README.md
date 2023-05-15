@@ -1,7 +1,7 @@
 <h2 align="center"> Budget-Control-Application </h2>
 
 <p align="center">
-  <img src="https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,q_100,w_657/v1683910489/Budget-Control-App/2_ewawda.png" />
+  <img src="https://res.cloudinary.com/dwc3fiaro/image/upload/c_scale,e_sharpen:100,h_707/v1684152514/Budget-Control-App/2_xwicqv.png" />
 </p>
 
 # Table of Contents
