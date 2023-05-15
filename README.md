@@ -10,31 +10,23 @@
 2.  [Project Setup](#project-setup)
     * [First Step](#first-step)<br>
     * [Second Step](#second-step)<br>
-4. [System Overview](#system-overview)</br>
-    * [Database](#database)
-    * [Backend](#backend)
-    * [Frontend](#frontend)        
-5. [Key Design Decision](#key-design-decisions)</br>
-    * [Database Design](#database-design)
-    * [Backend Design](#backend-design)
-    * [Frontend Design](#frontend-design)
-6. [CRUD Functionality :](#crud-functionality)
-    * [CREATE](#create-br)
-    * [READ](#read)
-    * [UPDATE](#update)  
-    * [DELETE](#delete)  
+    * [Third Step](#third-step)
+3. [Firebase Setup](#firebase-setup)
 7. [Security and Scalability](#securityy-and-scalability)
 8. [Conlusion and Reflection](#conclusion-and-reflection)
 
 # Project Description
 
-The application assists users in managing and controlling their expenditures. 
-Users can categorise their expenses and see where their money is going based on those classifications.
+The application supports users in effectively managing and controlling their expenses. 
+Users have the ability to classify their expenditures and view a breakdown of where their money is going based on categories.
 The users are able to :
 - Add a incomes and spendings
 - Create categories for expenses (e.g. "Shopping", "Travel")
 - Create plans and goals (e.g. "London Tour", "New Car purchase")
 - Present the financial transactions in the form of graphs, and determine which of the categories they spend the most money on.
+
+Deployed application : 
+https://budget-control-85f93.web.app
 
 # Project Setup
 
@@ -74,6 +66,8 @@ REACT_APP_APP_ID=[our details]
 ```
 
 ![.envFile](https://res.cloudinary.com/dwc3fiaro/image/upload/v1683911748/Budget-Control-App/5_raex8j.png)
+
+# Firebase Setup
 
 # Connecting with Cluster in MongoDb Compass
 
